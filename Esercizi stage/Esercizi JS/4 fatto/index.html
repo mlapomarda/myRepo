@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+     function calc(){
+        const num = parseInt(document.getElementById('num').value);
+        for(let i=1; i<=num; i++){
+          document.write(`${i}^2 = `+i*i+ "<br>");
+        }
+        document.write("fine elaborazione");
+      }
+    </script>
+    <style>
+      .center{
+        display: block;
+        text-align: center;
+        margin: 5px auto;
+      }
+    </style>
+    <title>Esercizio 4</title>
+  </head>
+  <body>
+    <span class="center">
+      Visualizzare nella finestra del browser, utilizzando codice javascript,
+      il quadrato dei primi N numeri interi e la scritta "fine elaborazione" al termine.
+    </span>
+    <form>
+      <input type="text" id="num" placeholder="Inserisci numero" class="center">
+      <button type="submit" onclick="calc()" class="center">submit</button>
+    </form>
+  </body>
+</html>

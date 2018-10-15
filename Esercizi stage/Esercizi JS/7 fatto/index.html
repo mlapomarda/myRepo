@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <title>Esercizio 7</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <form id="myForm">
+
+        <div class="form-group">
+          <label>Inserire nome e cognome</label>
+          <input type="text" class="textBox" placeholder="Nome e cognome" id="nameSur" />
+          <span id="invalidNameSur">Questo campo non accetta valori numerici</span>
+          <span id="nameSurObbl">Campo obbligatorio</span>
+        </div>
+
+        <div class="form-group">
+          <label>Sesso</label>
+          <div class="checkBox">
+            <input type="radio" name="gender">M</input>
+            <input type="radio" name="gender">F</input>
+            <span id="genderObbl">Campo obbligatorio</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Ateneo</label>
+          <select class="dropDown">
+            <option>Scegli ateneo</option>
+            <option>La Sapienza (uniroma1)</option>
+            <option>Università "Tor Vergata" (uniroma2)</option>
+            <option>Roma Tre (uniroma3)</option>
+          </select>
+          <span id="obblUni">Scegli un ateneo</span>
+        </div>
+
+        <div class="form-group">
+          <label>CAP</label>
+          <input type="text" class="textBox" placeholder="Inserire CAP" id="cap" />
+          <span id="lessFiveCap">Inserire almeno 5 valori numerici</span>
+          <span id="invalidCap">Questo campo accetta solo valori numerici</span>
+          <span id="invalidLengthCap">Questo campo accetta massimo 5 valori</span>
+        </div>
+
+        <div class="form-group">
+          <label>Indicare posizione attuale</label>
+          <div class="checkBox">
+            <input type="radio" name="pos">Studente</input>
+            <input type="radio" name="pos">Lavoratore</input>
+            <input type="radio" name="pos">Studente/Lavoratore</input>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Aggiungi una descrizione del lavoro svolto</label>
+          <input type="text" class="textBox" placeholder="Descrizione lavoro svolto" id="descr" />
+          <span id="descrObbl">Campo obbligatorio</span>
+        </div>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset form</button>
+
+      </form>
+    </div>
+  </body>
+</html>

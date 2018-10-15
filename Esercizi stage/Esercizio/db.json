@@ -1,0 +1,61 @@
+{  
+   "selected_district":"Ancona",
+   "stores_enabled":2,
+   "stores_disabled":1,
+   "districts":[  
+      {  
+         "district_name":"Marco Polo Senigallia",
+         "district_description":"",
+         "district_code":"92",
+         "district_cap":"60019",
+         "district_phone":"0717920972",
+         "district_fax":"0717930560",
+         "district_town":"Senigallia",
+         "district_address":"via N. Abbagnano, 7, Marche, Senigallia, 60019",
+         "district_line1":"via N. Abbagnano",
+         "district_flag":false,
+         "district_delivery_days":"5",
+         "district_street":"7",
+         "district_prov":"Ancona",
+         "district_lat":43.70868,
+         "district_lng":13.20811,
+         "district_distance":372
+      },
+      {  
+         "district_name":"Marco Polo Ancona",
+         "district_description":"",
+         "district_code":"93",
+         "district_cap":"60131",
+         "district_phone":"0712916030",
+         "district_fax":"0712916024",
+         "district_town":"Ancona",
+         "district_address":"via F. Scataglini, 7, Marche, Ancona, 60131",
+         "district_line1":"via F. Scataglini",
+         "district_flag":true,
+         "district_delivery_days":"5",
+         "district_street":"7",
+         "district_prov":"Ancona",
+         "district_lat":43.5518,
+         "district_lng":13.5132,
+         "district_distance":402
+      },
+      {  
+         "district_name":"Marco Polo Loreto",
+         "district_description":"",
+         "district_code":"76",
+         "district_cap":"60025",
+         "district_phone":"0717500937",
+         "district_fax":"0717501322",
+         "district_town":"Loreto",
+         "district_address":"via Buffolareccia, snc, Marche, Loreto, 60025",
+         "district_line1":"via Buffolareccia",
+         "district_flag":true,
+         "district_delivery_days":"5",
+         "district_street":"snc",
+         "district_prov":"Ancona",
+         "district_lat":43.43941,
+         "district_lng":13.61884,
+         "district_distance":416
+      }
+   ]
+}

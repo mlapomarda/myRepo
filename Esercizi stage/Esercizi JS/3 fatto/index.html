@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function calc(){
+        const num1 = parseInt(document.getElementById('num1').value);
+        const num2 = parseInt(document.getElementById('num2').value);
+        let ris;
+        ris = num1 + num2;
+        document.write(num1 + " + " + num2 + " = " + ris + "<br>");
+        ris = num1 - num2;
+        document.write(num1 + " - " + num2 + " = " + ris + "<br>");
+        ris = num1 * num2;
+        document.write(num1 + " * " + num2 + " = " + ris + "<br>");
+        ris = num1 / num2;
+        document.write(num1 + " / " + num2 + " = " + ris + "<br>");
+      }
+    </script>
+    <style>
+      .center{
+        display: block;
+        text-align: center;
+        margin: 5px auto;
+      }
+    </style>
+    <title>Esercizio 3</title>
+  </head>
+  <body>
+    <span class="center">Scrivere in una pagina HTML il codice
+      javascript per eseguire le quattro operazioni fondamentali su due campi input
+      e visualizzare il risultato.
+    </span>
+    <form>
+      <input type="text" id="num1" placeholder="Inserisci primo numero" class="center">
+      <input type="text" id="num2" placeholder="Inserisci secondo numero" class="center">
+      <button type="submit" onclick="calc()" class="center">submit</button>
+    </form>
+  </body>
+</html>

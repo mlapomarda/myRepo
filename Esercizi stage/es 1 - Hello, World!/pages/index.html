@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>An introduction to FrontEnd for Beginners</title>
+		<link href="dist/css/style.css" type="text/css" rel="stylesheet">
+		<!--<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>-->
+		<script src="dist/js/bundle-es5.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<a href="#">Project Name</a>
+		</header>
+
+		<section class="banner">
+			<h1>Hello, World!</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+			   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			</p>
+			<button id="btn1">
+				<img src="GitHub-btn.png"></img>
+			</button>
+			<button id="btn2">Slides »</button>
+		</section>
+
+		<section class="content" id="dinamic-art">
+			<!--<article class="art">
+				<h2 id="tit1"></h2>
+				<img class="image"></img>
+				<button disabled>tech</button>
+				<p class="descr">
+				</p>
+				<button>like</button>
+			</article>
+			<article class="art">
+				<h2 id="tit2"></h2>
+				<img class="image"></img>
+				<button disabled>tech</button>
+				<p class="descr">
+				</p>
+				<button>like</button>
+			</article>
+			<article class="art">
+				<h2 id="tit3"></h2>
+				<img class="image"></img>
+				<button disabled>tech</button>
+				<p class="descr">
+				</p>
+				<button>like</button>
+			</article>
+			<article class="art">
+				<h2 id="tit4"></h2>
+				<img class="image"></img>
+				<button disabled>tech</button>
+				<p class="descr">
+				</p>
+				<button>like</button>
+			</article>-->
+		</section>
+
+		<section id="post-section">
+				Inserire Id:
+				<input type="text" id="id"></input>
+				Inserire titolo:
+				<input type="text" id="title"></input>
+				Inserire nome immagine con estensione:
+				<input type="text" id="img"></input>
+				Inserire descrizione:
+				<input type="text" id="descr"></input>
+				<input type="submit" id="submit" style="margin-top: 30px;"></input>
+		</section>
+
+		<footer>
+			<hr>
+			<p>&copy;2018 Company, Inc.</p>
+		</footer>
+
+		<div class="policy">
+			<p>This is a cookie policy click <span id="clear">here</span> to close it.</p>
+		</div>
+	</body>
+
+	<script id="template" type="x-tmpl-mustache">
+		{{ #article }}
+		<article class='art'>
+		<h2>{{ title }}</h2>
+		<img src="{{ img }}">
+		<p>{{ descr }}</p>
+		</article>
+		{{ /article }}
+	</script>
+</html>

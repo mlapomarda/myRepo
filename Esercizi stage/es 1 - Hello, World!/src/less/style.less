@@ -1,0 +1,178 @@
+*{
+	box-sizing:border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header{
+	background-color:#223A48;
+	width:100%;
+	position:fixed;
+	top:0px;
+	z-index:10;
+	padding:15px;
+	padding-left: 50px;
+}
+
+header a{
+	text-decoration:none;
+	color:#B7D3F7;
+
+}
+
+header a:hover{
+	color:#FFFFFF;
+}
+
+.policy a{
+	text-decoration:none;
+	color:#5B9BD2;
+}
+
+.policy a:hover{
+	text-decoration:underline;
+	color:#fff;
+}
+
+footer{
+	position:relative;
+	margin-bottom:65px;
+	clear:both;
+	padding:50px;
+}
+
+.banner{
+	background-color:#E4EDF6;
+	width:100%;
+	position:relative;
+	margin-top:50px;
+	padding:50px;
+	padding-bottom:90px;
+	padding-right:100px;
+	line-height:30px;
+	font-size:20px;
+	color:#223A48;
+}
+
+.banner h1{
+	font-size: 50px;
+	/*line-height:50px;*/
+}
+
+.content .art{
+	/*display:inline-block;*/
+	float:left;
+	position:relative;
+	width:33%;
+	padding:20px;
+}
+
+.content{
+	padding: 30px;
+	float: left;
+}
+
+.policy{
+	background-color:#223A48;
+	color:#eee;
+	width:100%;
+	opacity:0.75;
+	position:fixed;
+	bottom:0px;
+	z-index:10;
+}
+
+.banner img{
+	width:20px;
+	height:20px;
+}
+
+#btn2{
+	float:left;
+	position:relative;
+	margin-left: 5px;
+	width:80px;
+}
+
+#btn1{
+	float:left;
+	position:relative;
+}
+
+button {
+  border-radius: 5px;
+  background-color: #fff;
+  border: 0.5px solid whitesmoke;
+	width:50px;
+	height:35px;
+	cursor: pointer;
+}
+
+button:focus{
+	outline: none;
+}
+
+button:disabled{
+	background-color: #1D71DF;
+	color:#ffffff;
+}
+
+.banner button:hover{
+	background-color: #e4e6ea;
+}
+
+article img{
+	width:100%;
+}
+
+#clear{
+	color: #1D71DF;
+}
+
+input{
+	display: block;
+	width: 100%;
+}
+
+#post-section{
+	display: table;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width : 480px) {
+	.content .art{
+		display:block;
+		position: relative;
+		width: 100%;
+		padding: 20px;
+	}
+
+	.banner h1{
+		line-height:50px;
+	}
+}
+
+@media only screen and (max-width : 768px) and (min-width : 480px) {
+	.content .art{
+		float:left;
+		position: relative;
+		width: 50%;
+		padding: 20px;
+	}
+
+	.banner h1{
+		line-height:50px;
+	}
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}

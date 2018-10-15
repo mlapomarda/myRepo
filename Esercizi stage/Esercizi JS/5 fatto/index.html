@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      const admin = ['Luca','Mario','Davide','Marco','Andrea','Simone'];
+      function run(){
+        function control(){
+          const str = document.getElementById('str').value;
+          for(let i=0; i<admin.length; i++){
+            if(admin[i] === str) return true;
+          }
+          return false;
+        }
+        const ctrl = control();
+        if(ctrl){
+          document.write("utente autorizzato <br>");
+          document.write("<a href=\"access.html\">accedi!</a>");
+        }else{
+          document.write("utente non autorizzato, accesso negato <br>");
+          document.write("<a href=\"index.html\">Torna indietro</a>");
+        }
+      }
+    </script>
+    <style>
+      .center{
+        display: block;
+        text-align: center;
+        margin: 5px auto;
+      }
+    </style>
+    <title>Esercizio 5</title>
+  </head>
+  <body>
+    <span class="center">
+      Realizzare una pagina con uno script che, dopo aver chiesto il nome dell'utente verifica,
+      controllando in un array di nomi che hanno i diritti di amministratore,
+      se l'utente è abilitato ad accedere alla pagina.
+    </span>
+    <form>
+      <input type="text" id="str" placeholder="nome utente" class="center">
+      <button type="submit" onclick="run()" class="center">submit</button>
+    </form>
+  </body>
+</html>

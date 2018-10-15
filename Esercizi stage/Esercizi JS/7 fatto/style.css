@@ -1,0 +1,121 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  border: 0;
+  margin: 0;
+  font-family: Verdana;
+}
+
+label{
+  display: block;
+  font-size: 13px;
+}
+
+input{
+  font-family: Verdana;
+  font-size: 10px;
+}
+
+button{
+  background-color: #6395d0;
+  padding: 7px;
+  border: 0;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.form-container{
+  background-color: #c8d1d5;
+  box-shadow: 5px 10px 8px #888888;
+  padding: 50px;
+  display: table;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.form-group{
+  padding-bottom: 30px;
+}
+
+.textBox{
+  width: 100%;
+  margin-top: 10px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.textBox:focus{
+  outline: 0;
+  border-color: #66afe9;
+}
+
+.checkBox{
+  font-size: 10px;
+  padding-top: 5px;
+}
+
+.dropDown{
+  border-radius: 3px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  color: #000;
+  background-color: #fff;
+  font-family: Verdana;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.dropDown:focus{
+  outline: 0;
+}
+
+#invalidCap{
+  font-size: 8px;
+  color: red;
+  display: none;
+}
+
+#invalidLengthCap{
+  font-size: 8px;
+  color: red;
+  display: none;
+}
+
+#invalidNameSur{
+  font-size: 8px;
+  color: red;
+  display: none;
+}
+
+#lessFiveCap{
+  font-size: 8px;
+  color: red;
+  display: none;
+}
+
+#nameSurObbl{
+  font-size: 8px;
+  color: red;
+  display: none;
+}
+
+#genderObbl{
+  font-size: 8px;
+  color: red;
+  display: none;
+}
+
+#descrObbl{
+  font-size: 8px;
+  color: red;
+  display: none;
+}
+
+#obblUni{
+  font-size: 8px;
+  color: red;
+  display: none;
+}

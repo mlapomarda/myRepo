@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(() => {
+        const colors = ['blue','red','yellow','green'];
+        let loop;
+        let j;
+        function start(i){
+          if(i < colors.length){
+            loop = setTimeout(function(){
+              $('body').css("backgroundColor", colors[i]);
+              i++;
+              if (i >= colors.length) {
+                i = 0;
+              }
+              j = i;
+              start(i);
+            }, 500);
+          }
+        }
+
+        $('#btnStop').on('click', () => {
+          clearTimeout(loop);
+        });
+
+        $('#btnRestart').on('click', () => {
+          loop = start(j);
+        });
+
+        start(0);
+      })
+    </script>
+    <style>
+      .btn{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        width: 20%;
+        height: 100px;
+      }
+
+    </style>
+    <title>Esercizio 6</title>
+  </head>
+  <body>
+    <button class="btn" id="btnStop">Stop</button>
+    <button class="btn" id="btnRestart">Restart</button>
+  </body>
+</html>
